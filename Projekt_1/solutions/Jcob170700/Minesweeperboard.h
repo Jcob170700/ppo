@@ -13,9 +13,11 @@ class MinesweeperBoard
     int mine_count;
     GameState state;
     Field board[100][100];
+    GameState getGameState( ) const;
 public:
     MinesweeperBoard(int width, int height, GameMode mode);
     void debug_display() const;
+    void displayField(const Field& field) const;
     int getBoardWidth() const;
     int getBoardHeight() const;
     int getMineCount() const;
@@ -24,7 +26,6 @@ public:
     void toggleFlag( int x, int y );
     void revealField( int x, int y );
     bool isRevealed( int x, int y ) const;
-    GameState getGameState( GameState state ) const;
     char getFieldInfo( int x, int y ) const;
     bool isOutside(int x, int y) const;
 };
