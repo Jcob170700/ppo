@@ -139,8 +139,6 @@ void MinesweeperBoard::toggleFlag( int x, int y )
         MinesweeperBoard::board[y][x].hasFlag = true;
 }
 
-
-
 void MinesweeperBoard::revealField( int x, int y )
 {
     if ( isRevealed( x, y ) )
@@ -151,8 +149,6 @@ void MinesweeperBoard::revealField( int x, int y )
         {
             for ( int j = 0; j < width; j++ )
             {
-                if ( isRevealed( j, i ) );
-                else
                 if ( MinesweeperBoard::board[y][x].hasMine )
                 {
                     MinesweeperBoard::board[y][x].hasMine = false;

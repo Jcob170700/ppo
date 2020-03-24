@@ -23,7 +23,7 @@ public:
     int countMines( int x, int y ) const;
     bool hasFlag( int x, int y ) const;
     void toggleFlag( int x, int y );
-    void revealField( int x, int y );
+    void revealField(int x, int y) ;
     bool isRevealed( int x, int y ) const;
     char getFieldInfo( int x, int y ) const;
     bool isOutside(int x, int y) const;
