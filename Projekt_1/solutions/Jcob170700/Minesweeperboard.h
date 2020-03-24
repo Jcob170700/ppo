@@ -13,7 +13,6 @@ class MinesweeperBoard
     int mine_count;
     GameState state;
     Field board[100][100];
-    GameState getGameState( ) const;
 public:
     MinesweeperBoard(int width, int height, GameMode mode);
     void debug_display() const;
@@ -28,6 +27,10 @@ public:
     bool isRevealed( int x, int y ) const;
     char getFieldInfo( int x, int y ) const;
     bool isOutside(int x, int y) const;
+
+    private:
+    GameState getGameState( ) const;
+
 };
 
 #endif //PPO_MINESWEEPERBOARD_H

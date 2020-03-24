@@ -139,11 +139,13 @@ void MinesweeperBoard::toggleFlag( int x, int y )
         MinesweeperBoard::board[y][x].hasFlag = true;
 }
 
+
+
 void MinesweeperBoard::revealField( int x, int y )
 {
     if ( isRevealed( x, y ) )
         return;
-    else if ( !isRevealed ( x,y ) )
+    else if ( !isRevealed ( x, y ) )
     {
         for ( int i = 0; i < height; i++ )
         {

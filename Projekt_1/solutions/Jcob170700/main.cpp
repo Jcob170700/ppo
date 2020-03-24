@@ -16,5 +16,6 @@ int main() {
     std::cout << '\n';
     board = new MinesweeperBoard(9, 7, HARD);
     board->debug_display();
+    delete board;
     return 0;
 }
